@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:layout_margin="4dp"
+        android:text="Source"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        />
+
+    <EditText
+        android:layout_margin="4dp"
+        android:hint="Enter Source"
+        android:id="@+id/et_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:clickable="false"
+       />
+
+    <TextView
+        android:layout_margin="4dp"
+        android:text="Destination"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:hint="Enter Destination"
+        android:id="@+id/et_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_margin="4dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getSpeechInput"
+        android:background="@drawable/ic_mic_none_black_24dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:text="Start Navigation"
+        android:id="@+id/btn_startNavigation"
+        android:layout_margin="4dp"
+        android:textStyle="italic|bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded_design"/>
+
+</LinearLayout>
